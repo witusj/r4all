@@ -37,9 +37,10 @@ Gebruik de `str()` functie.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
 library(ggplot2)
 library(plotly)
-myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv") %>% filter(Jaar == 2016)
+myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
 p <- ggplot(data = myDF) +
-   geom_col(aes(x = Categorie, y = Bedrag))
+   geom_col(aes(x = Categorie, y = Bedrag, fill = Jaar)) +
+   coord_flip()
 p
 ```
 
@@ -49,7 +50,7 @@ p
 
 msg_bad <- "Nee, dat is niet correct!"
 msg_success <- "Helemaal goed! Als je de functie `str()` toepast op de dataset zie je bij de genoemde variabel de code `int` en dus bevat deze variabele integers (gehele getallen)."
-test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad, msg_success, msg_bad))
 ```
 
 
