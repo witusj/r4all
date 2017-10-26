@@ -27,7 +27,7 @@ key: 19f5ba867b
 ```
 
 `@script`
-```{r}
+```r
 head(read.csv(url))
 ```
 
