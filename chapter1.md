@@ -36,8 +36,9 @@ Gebruik de `str()` functie.
 # The pre exercise code runs code to initialize the user's workspace.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
 library(ggplot2)
-library(plotly)
-myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
+url <- "https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv"
+myDF <- read.csv(url)
+myDF$Jaar <- as.factor(myDF$Jaar)
 p <- ggplot(data = myDF) +
    geom_col(aes(x = Categorie, y = Bedrag, fill = Jaar)) +
    coord_flip()
@@ -73,13 +74,15 @@ Gebruik de `mean()` functie
 
 `@pre_exercise_code`
 ```{r}
-myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
+url <- "https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv"
+myDF <- read.csv(url)
 ```
 
 `@sample_code`
 ```{r}
 # Lees data in
-myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
+url <- "https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv"
+myDF <- read.csv(url)
 
 # Bereken het gemiddelde van de variabele "Bedrag"
 
@@ -121,13 +124,15 @@ Doe exact wat er gevraagd wordt.
 
 `@pre_exercise_code`
 ```{r}
-myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
+url <- "https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv"
+myDF <- read.csv(url)
 ```
 
 `@sample_code`
 ```{r}
 # Lees data in
-myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
+url <- "https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv"
+myDF <- read.csv(url)
 
 # Gebruik de summary() functie
 
