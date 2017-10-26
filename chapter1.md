@@ -19,6 +19,7 @@ gebruik de `read.csv()` functie om data in te lezen vanuit de volgende url:
 
 https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv
 
+en te bewaren in een data frame (`myDF`).
 Welke `class` heeft de variabele "Jaar"?
 
 `@instructions`
@@ -34,9 +35,12 @@ Gebruik de `str()` functie.
 ```{r}
 # The pre exercise code runs code to initialize the user's workspace.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
-library(knitr)
-myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
-kable(head(myDF))
+library(ggplot2)
+library(plotly)
+myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv") %>% filter(Jaar == 2016)
+p <- ggplot(data = myDF) +
+   geom_col(aes(x = Categorie, y = Bedrag))
+p
 ```
 
 `@sct`
