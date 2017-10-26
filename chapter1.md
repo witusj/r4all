@@ -1,11 +1,11 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : 1. Data inlezen en beoordelen
+description : In dit onderdeel leer je een databron in te lezen en de kwaliteit te beoordelen.
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 ---
-## A really bad movie
+## Databron inlezen
 
 ```yaml
 type: MultipleChoiceExercise
@@ -15,7 +15,11 @@ skills: 1
 key: 58e743fad4
 ```
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
+gebruik de `read.csv()` functie om data in te lezen vanuit de volgende url:
+
+https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv
+
+Welke `class` heeft de variabele "Jaar"?
 
 `@instructions`
 - Adventure
