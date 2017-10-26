@@ -27,6 +27,9 @@ key: 19f5ba867b
 ```
 
 `@script`
+```{r}
+read.csv(url)
+```
 
 Now let's try some examples.
 
