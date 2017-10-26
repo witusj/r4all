@@ -22,33 +22,30 @@ https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202
 Welke `class` heeft de variabele "Jaar"?
 
 `@instructions`
-- Adventure
-- Action
-- Animation
-- Comedy
+- Character
+- Numeric
+- Integer
+- Factor
 
 `@hint`
-Have a look at the plot. Which color does the point with the lowest rating have?
+Gebruik de `str()` functie.
 
 `@pre_exercise_code`
 ```{r}
 # The pre exercise code runs code to initialize the user's workspace.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
-
-movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-library(ggplot2)
-
-ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
+library(knitr)
+myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
+kable(head(myDF))
 ```
 
 `@sct`
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+msg_bad <- "Nee, dat is niet correct!"
+msg_success <- "Helemaal goed! Als je de functie `str()` toepast op de dataset zie je bij de genoemde variabel de code `int` en dus bevat deze variabele integers (gehele getallen)."
+test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 
