@@ -53,65 +53,8 @@ msg_success <- "Helemaal goed! Als je de functie `str()` toepast op de dataset z
 test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad, msg_success, msg_bad))
 ```
 
-
---- type:ConsoleExercise lang:r xp:100 skills:1 key:915ccf1b66
-## <<<New Exercise>>>
-
-
-*** =instructions
-
-*** =hint
-
-*** =pre_exercise_code
-```{r}
-
-```
-
-*** =sample_code
-```{r}
-
-```
-
-*** =solution
-```{r}
-
-```
-
-*** =sct
-```{r}
-
-```
-
---- type:ExamExercise lang:r xp:100 skills:1 key:e6352affda
-## <<<New Exercise>>>
-
-
-*** =instructions
-
-*** =hint
-
-*** =pre_exercise_code
-```{r}
-
-```
-
-*** =sample_code
-```{r}
-
-```
-
-*** =solution
-```{r}
-
-```
-
-*** =sct
-```{r}
-
-```
-
 ---
-## <<<New Exercise>>>
+## Gemiddelde berekenen
 
 ```yaml
 type: NormalExercise
@@ -123,28 +66,38 @@ skills: 1
 
 
 `@instructions`
+Bereken het gemiddelde van de variabele "Bedrag".
 
 `@hint`
+Gebruik de `mean()` functie
 
 `@pre_exercise_code`
 ```{r}
-
+myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
 ```
 
 `@sample_code`
 ```{r}
+# Lees data in
+myDF <- read.csv("https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv")
+
+# Bereken het gemiddelde van de variabele "Bedrag"
 
 ```
 
 `@solution`
 ```{r}
-
+# Bereken het gemiddelde van de variabele "Bedrag"
+mean(myDF$Bedrag)
 ```
 
 `@sct`
 ```{r}
-
+test_function_result("mean")
+success_msg("Helemaal goed!")
 ```
+
+
 ---
 ## More movies
 
