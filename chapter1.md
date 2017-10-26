@@ -1,9 +1,6 @@
 ---
 title       : 1. Data inlezen en beoordelen
 description : In dit onderdeel leer je een databron in te lezen en de kwaliteit te beoordelen.
-attachments :
-  slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
-
 ---
 ## Databron inlezen
 
