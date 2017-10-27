@@ -99,7 +99,7 @@ success_msg("Helemaal goed!")
 
 
 ---
-## More movies
+## Data beoordelen
 
 ```yaml
 type: NormalExercise
@@ -111,10 +111,8 @@ key: a19c8a0264
 
 In de vorige oefening hebben we voor één variabele het gemiddelde berekend. Als je dit snel een statistisch overzicht wilt hebben van alle data gebruik je de `summary()` functie.
 
-A dataset with a selection of movies, `movie_selection`, is available in the workspace.
-
 `@instructions`
-Gebruik de pas de `summary()` functie toe op myDF
+Pas de `summary()` functie toe op myDF
 
 `@hint`
 Doe exact wat er gevraagd wordt.
