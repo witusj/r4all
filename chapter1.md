@@ -109,7 +109,7 @@ skills: 1
 key: a19c8a0264
 ```
 
-In de vorige oefening hebben we voor één variabele het gemiddelde berekend. Als je dit snel een statistisch overzicht wilt hebben van alle data gebruik je de `summary()` functie.
+In de vorige oefening hebben we voor één variabele het gemiddelde berekend. Als je snel een statistisch overzicht wilt hebben van alle data gebruik je de `summary()` functie.
 
 `@instructions`
 Pas de `summary()` functie toe op myDF
