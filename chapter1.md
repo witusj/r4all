@@ -16,7 +16,7 @@ gebruik de `read.csv()` functie om data in te lezen vanuit de volgende url:
 
 https://raw.githubusercontent.com/witusj/WorkshopSI/gh-pages/Datasets/sessie%202/subs_data.csv
 
-en te bewaren in een data frame (`myDF`).
+en te bewaren in een data frame (`newDF`).
 Welke `class` heeft de variabele "Jaar"?
 
 `@instructions`
